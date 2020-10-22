@@ -20,6 +20,7 @@ public class MyController {
      */
     @GetMapping("/first")
     public String indexPage(Model model) {
+        System.out.println("哈哈哈哈哈哈哈哈哈");
         String message = "辉哥是傻逼";
         model.addAttribute("message", message);
         return "index";
