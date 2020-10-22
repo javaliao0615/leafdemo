@@ -56,6 +56,7 @@ public class MyController {
         model.addAttribute("result","y");
         model.addAttribute("user","1");
         model.addAttribute("manage","1");
+        System.out.println(model);
         return "index4";
     }
     @GetMapping("/index5")
