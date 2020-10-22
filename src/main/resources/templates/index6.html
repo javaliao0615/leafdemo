@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <!--时间格式化-->
+    <span th:text="${#dates.format(date,'yyyy-MM-dd')}"></span><br>
+   <!--字符处理-->
+    <p th:text="${#strings.abbreviate(str,20)}"></p>
+    <span th:if="${!#strings.isEmpty(str2)}">
+        哈哈哈哈哈哈
+    </span>
+    <!--截取-->
+    <span th:text="${#strings.substring(str2,0,2)}"></span>
+</body>
+</html>

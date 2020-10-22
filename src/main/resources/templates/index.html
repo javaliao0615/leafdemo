@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    这里是页面
+    <h1 th:text="${message}"></h1>
+    展示用户:
+    <span th:text="${user.id}"></span>
+    <span th:text="${user.name}"></span>
+    <span th:text="${user.age}"></span><br>
+    图片:<img th:src="${src3.src1}" alt="">
+        <img th:src="${src3.src2}">
+</body>
+</html>

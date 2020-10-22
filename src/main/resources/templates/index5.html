@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/my.css">
+    <link rel="stylesheet" th:href="@{/css/my.css}">
+</head>
+<body>
+<!--引入资源-->
+    <!--第一种引入方式include-->
+    <div th:include="~{end::head}"></div>
+    <!--第二种引入方式insert-->
+    <div th:insert="~{end::head}"></div>
+    <!--replace-->
+    <div th:replace="~{end::head}"></div>
+</body>
+</html>

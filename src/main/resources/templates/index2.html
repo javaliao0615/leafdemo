@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <table width="300px" style="text-align: center">
+    <tr>
+        <th>序号</th>
+        <th>id</th>
+        <th>姓名</th>
+        <th>年纪</th>
+    </tr>
+       <tr th:each="user,start:${userList}">
+           <td th:text="${start.index+1}"></td>
+
+           <!--<td th:text="${start.count}"></td> 计数-->
+           <!--<td th:text="${start.current}"></td> 当前对象-->
+           <!--<td th:text="${start.even}"></td>偶数-->
+           <!--<td th:text="${start.odd}"></td>奇数-->
+           <!--<td th:text="${start.first}"></td>开始-->
+           <!--<td th:text="${start.last}"></td>结束-->
+           <!--<td th:text="${start.size}"></td>集合大小-->
+           <td th:text="${user.id}"></td>
+           <td th:text="${user.name}"></td>
+           <td th:text="${user.age}"></td>
+       </tr>
+   </table>
+</body>
+</html>
